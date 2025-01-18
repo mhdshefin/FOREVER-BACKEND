@@ -27,13 +27,13 @@ app.use('/api/order',orderRouter)
 
 app.get('/', (req, res) => {
     res.send('Hello')
-})
+}) 
 
 cron.schedule('* * * * * *',()=>{
     console.log("server running");
 }) 
  
 app.listen(port, () => {
-    console.log(`Server running on port ${port} `);
+    console.log(`Server is running on port ${port} `);
 
 })
