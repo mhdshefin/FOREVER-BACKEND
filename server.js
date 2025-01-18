@@ -30,9 +30,9 @@ app.get('/', (req, res) => {
 })
 
 cron.schedule('* * * * * *',()=>{
-    console.log("server running every second");
-})
-
+    console.log("server running");
+}) 
+ 
 app.listen(port, () => {
     console.log(`Server running on port ${port} `);
 

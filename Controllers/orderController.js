@@ -96,7 +96,6 @@ const verifyStripe = async (req,res) => {
     }
 }
 
-
 const allOrders = async (req, res) => {
     try {
         const orders = await orderModel.find({})
