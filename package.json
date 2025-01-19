@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
     "cloudinary": "^2.5.1",
     "connection": "^1.5.0",
     "cors": "^2.8.5",
@@ -32,5 +32,8 @@
     "@ljharb/tsconfig": "^0.2.3",
     "@types/mongoose": "^5.11.96"
   },
+  "engines": {
+  "node": "20.17.0"
+},
   "description": ""
 }
