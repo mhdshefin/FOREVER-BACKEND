@@ -7,6 +7,7 @@ const stripe = new Stripe(process.env.SRTIPE_SECRET_KEY)
 const currency = 'inr'
 
 const placeOrder = async (req, res) => {
+
     try {
 
         const { userId, items, amount, address } = req.body;
@@ -26,7 +27,7 @@ const placeOrder = async (req, res) => {
 
         await userModel.findByIdAndUpdate(userId, { cartData: {} })
 
-        res.json({ success: true, message: "Order Succefully Placed" })
+        res.json({ success: true, message: "Order Placed" })
 
     } catch (error) {
         console.log(error);
